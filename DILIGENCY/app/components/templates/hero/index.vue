@@ -20,7 +20,7 @@
                             :custom-class="getCustomCtaClass(item.type)" />
                     </div>
                     <p class="text-2xl text-white">
-                        APPS 2:
+                        OK:
                         {{ config.public.SANITY_CLIENT_TOKEN }}
                         {{ config.public.SANITY_PROJECT_ID }}
                     </p>
