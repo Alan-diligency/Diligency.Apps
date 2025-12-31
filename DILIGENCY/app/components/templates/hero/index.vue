@@ -1,10 +1,9 @@
 <template>
     <PageLayout :custom-class="customClass">
         <BackgroundVideo :link="data?.background" v-if="data?.background" />
-        <section class="py-4 size-full z-10">
+        <section class="py-4 size-full z-10 ">
             <div class="flex items-center justify-center py-4 size-full" :class="getTextDisposition()">
-                <div class="h-full w-full flex flex-col" :class="getTextContentFlex()">
-
+                <div class="h-full w-full flex flex-col justify-center" :class="getTextContentFlex()">
                     <h1 class="text-[2.5rem]/13 md:text-7xl/18 font-bold text-secondary tracking-normal z-10 w-full"
                         :class="getTitleContentSize()">
                         <span v-for="(item, index) in data?.title" :key="index">
