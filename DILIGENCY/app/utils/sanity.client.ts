@@ -1,11 +1,27 @@
+// import { createClient } from '@sanity/client';
+
+// export const SANITY_CLIENT = createClient() =>{
+//     projectId: '623q79br',
+//     dataset: 'production',
+//     token: process.env.SANITY_TOKEN,
+//     apiVersion: '2025-02-19',
+//     useCdn: false
+// };
+
 import { createClient } from '@sanity/client';
-export const SANITY_CLIENT = createClient({
-    projectId: '623q79br',
-    dataset: 'production',
-    token: 'sk4lJGOQVv55YvlXfCbN6KZFRkU01HoXPSnpYrlQy5VDQHJxno4TuRH0foXw9CPsFKlLRR7x18aa5KnopuMCNYuIjyU1SwoKLz3yBe2OgveFXBGBEfwLywbfzG6BQxOvoh3sZ79R6dnNRiNkU5y3JCHCVO9dpw9jEpO4kT6UbqxkHgELWKnP',
-    apiVersion: '2025-02-19',
-    useCdn: false
-});
+
+export const useSanityClient = () => {
+    const config = useRuntimeConfig();
+
+    return createClient({
+        projectId: config.public.sanityProjectId,
+        dataset: config.public.sanityDataset,
+        apiVersion: config.public.sanityApiVersion,
+        token: process.server ? config.sanityToken : undefined,
+        useCdn: true,
+    });
+};
+
 
 //projetc id ==> prod
 //bap4muo0
