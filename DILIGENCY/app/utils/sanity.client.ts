@@ -10,7 +10,7 @@
 
 import { createClient } from '@sanity/client';
 
-export const useSanityClient = () => {
+export const SANITY_CLIENT = () => {
     const config = useRuntimeConfig();
 
     return createClient({
