@@ -1,0 +1,42 @@
+{
+    "home": {
+        "hero": {
+            "title_a": "Offrez-vous la",
+            "title_b": "Diligence",
+            "title_c": "digitale",
+            "subtitle": "Sites web & applications sur-mesure, pensés pour la performance, la clarté et la conversion",
+            "cta": {
+                "reserveStrategyCall": "Réservez un appel stratégique",
+                "applyMyProject": "Soumettre mon projet"
+            }
+        },
+        "strategy": {
+            "title": "Introduction stratégique",
+            "subtitle": "Votre site web n’est pas juste une vitrine. C’est une machine à crédibilité, à conversion et à croissance. Chez Diligency, nous allions rigueur technique, esthétique moderne et compréhension business pour développer des solutions digitales sur-mesure."
+        },
+        "expertise": {
+            "title": "Nos expertises sur-mesure",
+            "subtitle": "Chaque projet est unique. Diligency crée des sites, applications et automatisations sur-mesure, alliant technique, design et stratégie pour booster votre crédibilité, conversion et croissance durable."
+        }
+    },
+    "button": {
+        "menu": {
+            "agency": "Agence",
+            "service": "Services",
+            "contact": "Contact"
+        },
+        "submenu": {
+            "about": "A propos",
+            "jobCarrier": "Job & Carrière",
+            "hub": "Le Hub",
+            "webApp": "Web App",
+            "webShow": "Sites vitrines",
+            "eCommerce": "E-commerce",
+            "itIaSolution": "Solution IT/IA"
+        },
+        "cta": {
+            "reserveStrategyCall": "Réservez un appel stratégique",
+            "applyMyProject": "Soumettre mon projet"
+        }
+    }
+}

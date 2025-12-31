@@ -1,0 +1,42 @@
+{
+    "home": {
+        "hero": {
+            "title_a": "Treat yourself to",
+            "title_b": "digital",
+            "title_c": "Diligence",
+            "subtitle": "Custom websites & applications, designed for performance, clarity, and conversion",
+            "cta": {
+                "reserveStrategyCall": "Book a strategy call",
+                "applyMyProject": "Submit my project"
+            }
+        },
+        "strategy": {
+            "title": "Strategic Introduction",
+            "subtitle": "Your website is not just a showcase. It is a machine for credibility, conversion, and growth. At Diligency, we combine technical rigor, modern aesthetics, and business understanding to develop tailor-made digital solutions."
+        },
+        "expertise": {
+            "title": "Our Tailor-Made Expertise",
+            "subtitle": "Each project is unique. Diligency creates custom websites, applications, and automations, combining technology, design, and strategy to boost your credibility, conversion, and sustainable growth."
+        }
+    },
+    "button": {
+        "menu": {
+            "agency": "Agency",
+            "service": "Services",
+            "contact": "Contact"
+        },
+        "submenu": {
+            "about": "About",
+            "jobCarrier": "Job & Career",
+            "hub": "The Hub",
+            "webApp": "Web App",
+            "webShow": "Showcase Sites",
+            "eCommerce": "E-commerce",
+            "itIaSolution": "IT/AI Solution"
+        },
+        "cta": {
+            "reserveStrategyCall": "Book a strategy call",
+            "applyMyProject": "Submit my project"
+        }
+    }
+}
