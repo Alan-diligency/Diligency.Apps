@@ -53,8 +53,6 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     SANITY_CLIENT_TOKEN: process.env.SANITY_CLIENT_TOKEN,
-    public: {
-      SANITY_PROJECT_ID: process.env.SANITY_PROJECT_ID,
-    },
+    SANITY_PROJECT_ID: process.env.SANITY_PROJECT_ID
   },
 })

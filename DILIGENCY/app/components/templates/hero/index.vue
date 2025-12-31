@@ -19,11 +19,6 @@
                         <component :is="getCta(item.type!)" v-for="(item, index) in ctas" :key="index" :data="item"
                             :custom-class="getCustomCtaClass(item.type)" />
                     </div>
-                    <p class="text-2xl text-white">
-                        OK:
-                        {{ config.public.SANITY_CLIENT_TOKEN }}
-                        {{ config.public.SANITY_PROJECT_ID }}
-                    </p>
                 </div>
             </div>
         </section>
