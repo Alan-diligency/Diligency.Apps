@@ -1,0 +1,24 @@
+/* assets/css/section-spacing.css */
+.block-spacing {
+    width: var(--block-spacing-mobile) !important;
+    height: var(--block-spacing-mobile) !important;
+}
+
+@media (min-width: 768px) {
+    .block-spacing {
+        width: var(--block-spacing-desktop) !important;
+        height: var(--block-spacing-desktop) !important;
+    }
+}
+
+.section-title-spacing {
+    width: var(--section-title-spacing-mobile) !important;
+    height: var(--section-title-spacing-mobile) !important;
+}
+
+@media (min-width: 768px) {
+    .section-title-spacing {
+        width: var(--section-title-spacing-desktop) !important;
+        height: var(--section-title-spacing-desktop) !important;
+    }
+}

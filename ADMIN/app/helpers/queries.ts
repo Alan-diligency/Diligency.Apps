@@ -1,0 +1,1 @@
+export const GET_ID_BY_KEY = `*[_key == $key]{_id}[0]`

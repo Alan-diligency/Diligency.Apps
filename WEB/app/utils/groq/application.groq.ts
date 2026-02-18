@@ -1,0 +1,1 @@
+export const GET_APPLICATION_GROQ = `*[_type == "application"]`;

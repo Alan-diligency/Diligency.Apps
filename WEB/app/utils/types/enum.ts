@@ -1,0 +1,7 @@
+export enum MAIL_STATE_ENUM {
+    UNREAD, READ
+}
+
+export enum APPLICATION_STATE_ENUM {
+    UNREAD, READ
+}

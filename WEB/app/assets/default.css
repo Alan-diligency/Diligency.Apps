@@ -1,0 +1,29 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    background: oklch(87.475% 0.01219 79.78);
+    color: oklch(32.185% 0.0851 259.7);
+}
+
+*:focus {
+    -webkit-tap-highlight-color: transparent;
+    outline: none !important;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}

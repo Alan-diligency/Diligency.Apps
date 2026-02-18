@@ -1,0 +1,4 @@
+<template>
+    <TemplatesTableSectionFooter />
+    <TemplatesTableSectionArticles />
+</template>

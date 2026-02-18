@@ -4,10 +4,18 @@
 .nuxt
 .nitro
 .cache
-dist
 
-# Node dependencies
+# Sanity
+/.sanity
+
+# Node
 node_modules
+/.pnp
+.pnp.js
+
+# Compiled
+/dist
+dist
 
 # Logs
 logs
@@ -17,8 +25,21 @@ logs
 .DS_Store
 .fleet
 .idea
+*.local
+*.pem
 
 # Local env files
 .env
 .env.*
 !.env.example
+
+# Logs
+/logs
+*.log
+
+# Coverage directory used by testing tools
+/coverage
+
+# Typescript
+*.tsbuildinfo
+# *sanity.client.ts
