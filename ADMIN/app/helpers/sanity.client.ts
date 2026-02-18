@@ -1,8 +1,8 @@
 import { createClient } from '@sanity/client';
 export const SANITY_CLIENT = createClient({
     dataset: 'production',
-    projectId: "623q79br",
-    token: "skT7XtUjfCkluEDVKVAkPKSlDkAhqMnBGMYnqvH3dKtPG8Y7HpQPLGBGnXYrsD8JFBT2vGndYJy8WQKvHG5e3y0ptVS0zmSVYjhAkApACChfMOWg5ztpkasFmpZiG8tTfMxQosV90UG4kPOpTfQb7cWcTT7XHy31oDeZDDr1yrdVgMbmSOJx",
+    projectId: "bap4muo0",
+    token: "sky2kgOzXXkm8j64Lbce20iXQLxYmvndB4Ub0uq8vz5WVvO4D7eXMEBeGuu1iFJvLXBiRMVbOhUKIL9qIZiuGkGvLoD0VbMOMiXbSEJA6WlrKpVJGZQSWXHjcDgOXtUzbKG8WtuvSaHP952hlHrV0AvUHkeJwo8l9WrOedbi5Outvb5AFgMX", //TOKEN_A
     apiVersion: '2025-02-19',
     useCdn: false
 });
