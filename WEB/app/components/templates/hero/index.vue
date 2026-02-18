@@ -4,13 +4,13 @@
         <section class="py-4 size-full z-10 ">
             <div class="flex items-center justify-center py-4 size-full" :class="getTextDisposition()">
                 <div class="h-full w-full flex flex-col justify-center" :class="getTextContentFlex()">
-                    <h1 class="text-[2.5rem]/13 md:text-7xl/18 font-bold text-secondary tracking-normal z-10 w-full"
+                    <h1 class="text-[2.5rem]/13 md:text-7xl/18 xl:text-[7rem]/25 font-bold text-secondary tracking-normal z-10 w-full"
                         :class="getTitleContentSize()">
                         <span v-for="(item, index) in data?.title" :key="index">
                             {{ item?.[locale] }}
                         </span>
                     </h1>
-                    <div class="leading-7 text-xl  z-10 text-white" :class="getSubtitleContentSize()"
+                    <div class="leading-7 text-xl xl:text-2xl  z-10 text-white" :class="getSubtitleContentSize()"
                         v-if="data?.subtitle" v-for="item in data?.subtitle">
                         <p>{{ item?.[locale] }}</p>
                     </div>
@@ -67,7 +67,7 @@ const titleAlign = computed(() => {
 
 const getTitleContentSize = (): string => {
     return path.value.includes('/home')
-        ? "w-full md:w-5/10"
+        ? "w-full md:w-5/10 2xl:w-8/10"
         : themeSetting.value?.TitleTextContentSize ?? 'w-full md:w-9/10';
 }
 
