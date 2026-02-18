@@ -4,14 +4,14 @@
         <Icon :name="props.data.icon" class="size-6" />
         <div class="transition-all duration-350 absolute hidden group-hover:block bg-secondary-500 text-white text-xs rounded-sm px-2 py-1 top-0 left-1/2 -translate-x-1/2 -translate-y-full whitespace-nowrap"
             v-if="!isLink(props.data.link)">
-            En cours de création
+            {{ text?.[locale] }}
         </div>
     </a>
 </template>
 <script lang="ts" setup>
 import { isLink } from '~/utils/http';
 import type { SocialType } from './interface';
-
+const { locale } = useI18n()
 const props = defineProps({
     data: {
         required: true,
@@ -28,5 +28,10 @@ const StringOrBooleaToBoolean = (value: string | boolean): boolean => {
 
 const OnClick = () => {
     window.open(`${props.data.link}`, '_blank', 'noopener,noreferrer')
+}
+
+const text = {
+    en: 'In progress',
+    fr: 'En cours de création'
 }
 </script>

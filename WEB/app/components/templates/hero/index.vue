@@ -4,14 +4,14 @@
         <section class="py-4 size-full z-10 ">
             <div class="flex items-center justify-center py-4 size-full" :class="getTextDisposition()">
                 <div class="h-full w-full flex flex-col justify-center" :class="getTextContentFlex()">
-                    <h1 class="text-[2.5rem]/13 md:text-7xl/18 xl:text-[7rem]/25 font-bold text-secondary tracking-normal z-10 w-full"
+                    <h1 class="text-[2.5rem]/13 md:text-7xl/18 2xl:text-[7rem]/25 font-bold text-secondary tracking-normal z-10 w-full"
                         :class="getTitleContentSize()">
                         <span v-for="(item, index) in data?.title" :key="index">
                             {{ item?.[locale] }}
                         </span>
                     </h1>
-                    <div class="leading-7 text-xl xl:text-2xl  z-10 text-white" :class="getSubtitleContentSize()"
-                        v-if="data?.subtitle" v-for="item in data?.subtitle">
+                    <div class="leading-7 text-xl md:text-2xl 2xl:text-2xl  z-10 text-white"
+                        :class="getSubtitleContentSize()" v-if="data?.subtitle" v-for="item in data?.subtitle">
                         <p>{{ item?.[locale] }}</p>
                     </div>
                     <div class="z-20 flex flex-col items-center justify-center w-full gap-5 md:flex-row">

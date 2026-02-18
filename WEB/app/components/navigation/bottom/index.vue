@@ -37,15 +37,18 @@
             <div class="w-full">
                 <div class="flex justify-between gap-4 text-xl text-center md:text-left">
                     <ul class="flex-1 space-y-2">
+
                         <li v-for="(item, index) in leftColumn" :key="index">
-                            <a :href="item.link" class="text-gray-300 hover:text-white transition-fast">
+                            <a v-if="item.link" :href="item.link"
+                                class="text-gray-300 hover:text-white transition-fast">
                                 {{ item?.name?.[locale] }}
                             </a>
                         </li>
                     </ul>
                     <ul class="flex-1 space-y-2">
                         <li v-for="(item, index) in rightColumn" :key="index">
-                            <a :href="item.link" class="text-gray-300 hover:text-white transition-fast">
+                            <a v-if="item.link" :href="item.link"
+                                class="text-gray-300 hover:text-white transition-fast">
                                 {{ item?.name?.[locale] }}
                             </a>
                         </li>

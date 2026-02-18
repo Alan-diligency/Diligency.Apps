@@ -8,12 +8,15 @@
                 <UNavigationMenu :collapsed="collapsed" :items="navigationStore.menuData" orientation="vertical" />
             </template>
             <template #footer="{ collapsed }">
-
-                <div class="w-full border-t border-gray-200">
-                    <UButton color="neutral" variant="soft" class="w-full cursor-pointer" :block="collapsed" size="xl">
-                        <UIcon name="i-lucide-circle-user-round" class="size-6" />
-                        <span>{{ `${user?.firstName?.toUpperCase()}` }}</span>
-                    </UButton>
+                <div class="flex flex-col gap-2">
+                    <UColorModeSelect class="w-full" />
+                    <div class="w-full border-t border-gray-200">
+                        <UButton color="neutral" variant="soft" class="w-full cursor-pointer" :block="collapsed"
+                            size="xl">
+                            <UIcon name="i-lucide-circle-user-round" class="size-6" />
+                            <span>{{ `${user?.firstName?.toUpperCase()}` }}</span>
+                        </UButton>
+                    </div>
                 </div>
             </template>
         </UDashboardSidebar>
